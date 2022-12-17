@@ -4,7 +4,7 @@ import menu2 from "../assets/menu2.svg";
 import userImg from "../assets/user.svg";
 import {NavLink} from "react-router-dom";
 import {useSelector} from "react-redux";
-import {userSelector} from "../slice/userSlice";
+import {userSelector} from "../slices/userSlice";
 
 function SideBar() {
 

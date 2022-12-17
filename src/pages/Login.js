@@ -2,7 +2,7 @@ import bgLogin from "../assets/bg-login.svg";
 import TopBar from "../components/TopBar";
 import {NavLink, useNavigate} from "react-router-dom";
 import {useDispatch, useSelector} from "react-redux";
-import {login, userSelector} from "../slice/userSlice";
+import {login, userSelector} from "../slices/userSlice";
 import {useForm} from "react-hook-form";
 import {useEffect} from "react";
 

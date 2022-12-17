@@ -3,7 +3,7 @@ import TopBar from "../components/TopBar";
 import {NavLink, useNavigate} from "react-router-dom";
 import {useDispatch} from "react-redux";
 import {useForm} from "react-hook-form";
-import {signup} from "../slice/userSlice";
+import {signup} from "../slices/userSlice";
 
 function Signup() {
 

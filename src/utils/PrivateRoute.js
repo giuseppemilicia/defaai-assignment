@@ -1,7 +1,7 @@
 import React from 'react';
 import {Navigate} from 'react-router-dom';
 import {useSelector} from "react-redux";
-import {userSelector} from "../slice/userSlice";
+import {userSelector} from "../slices/userSlice";
 
 const PrivateRoute = ({ children }) => {
     const { user } = useSelector(userSelector);
