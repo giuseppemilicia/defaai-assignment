@@ -11,6 +11,7 @@ function App() {
       <Routes>
         <Route element={<Layout />}>
             <Route index element={<Login />} />
+            <Route path="/signup" element={<Signup />} />
             <Route path="*" element={<Error404 />} />
         </Route>
       </Routes>
