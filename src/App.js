@@ -4,12 +4,14 @@ import './App.css';
 import SideBar from "./components/SideBar";
 import {Outlet, Route, Routes} from "react-router-dom";
 import Error404 from "./pages/Error404";
+import Login from "./pages/Login";
 
 function App() {
   return (
       <Routes>
         <Route element={<Layout />}>
-          <Route path="*" element={<Error404 />} />
+            <Route index element={<Login />} />
+            <Route path="*" element={<Error404 />} />
         </Route>
       </Routes>
   );
