@@ -5,6 +5,7 @@ import SideBar from "./components/SideBar";
 import {Outlet, Route, Routes} from "react-router-dom";
 import Error404 from "./pages/Error404";
 import Login from "./pages/Login";
+import Signup from "./pages/Signup";
 
 function App() {
   return (
