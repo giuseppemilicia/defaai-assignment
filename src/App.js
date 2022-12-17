@@ -6,6 +6,8 @@ import {Outlet, Route, Routes} from "react-router-dom";
 import Error404 from "./pages/Error404";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
+import PrivateRoute from "./utils/PrivateRoute";
+import VideoArchive from "./pages/VideoArchive";
 
 function App() {
   return (
@@ -13,6 +15,11 @@ function App() {
         <Route element={<Layout />}>
             <Route index element={<Login />} />
             <Route path="/signup" element={<Signup />} />
+            <Route path="/archive" element={
+                <PrivateRoute>
+                    <VideoArchive />
+                </PrivateRoute>
+            } />
             <Route path="*" element={<Error404 />} />
         </Route>
       </Routes>
