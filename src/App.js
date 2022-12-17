@@ -8,6 +8,7 @@ import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import PrivateRoute from "./utils/PrivateRoute";
 import VideoArchive from "./pages/VideoArchive";
+import VideoEditor from "./pages/VideoEditor";
 
 function App() {
   return (
@@ -18,6 +19,11 @@ function App() {
             <Route path="/archive" element={
                 <PrivateRoute>
                     <VideoArchive />
+                </PrivateRoute>
+            } />
+            <Route path="/editor/*" element={
+                <PrivateRoute>
+                    <VideoEditor />
                 </PrivateRoute>
             } />
             <Route path="*" element={<Error404 />} />
