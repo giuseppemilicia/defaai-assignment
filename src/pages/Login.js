@@ -22,7 +22,7 @@ function Login() {
         if (user) {
             navigate("/editor");
         }
-    }, [user]);
+    }, [navigate, user]);
 
     return (
         <div>

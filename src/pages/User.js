@@ -31,7 +31,7 @@ const Layout = () => {
         if (user === undefined) {
             navigate("/");
         }
-    }, [user]);
+    }, [navigate, user]);
 
     return (
         <div>
